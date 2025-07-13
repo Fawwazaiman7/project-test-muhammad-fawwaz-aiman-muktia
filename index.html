@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ideas - Suitmedia</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header id="header">
+    <div class="logo">Suitmedia</div>
+    <nav>
+      <a href="#">Work</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#" class="active">Ideas</a>
+      <a href="#">Careers</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <!-- BANNER -->
+  <section class="banner">
+    <div class="banner-image"></div>
+    <div class="banner-text">
+      <h1>Ideas</h1>
+      <p>Where all our great things begin</p>
+    </div>
+  </section>
+
+  <!-- FILTER -->
+  <div class="filter-bar">
+    <span id="pagination-info"></span>
+    <div>
+      <label>Show per page:</label>
+      <select id="showPerPage">
+        <option>10</option>
+        <option>20</option>
+        <option>50</option>
+      </select>
+    </div>
+    <div>
+      <label>Sort by:</label>
+      <select id="sortBy">
+        <option value="-published_at">Newest</option>
+        <option value="published_at">Oldest</option>
+      </select>
+    </div>
+  </div>
+
+  <!-- CARD CONTAINER -->
+  <div class="card-container" id="cardContainer"></div>
+
+  <!-- PAGINATION -->
+  <div class="pagination" id="pagination"></div>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+  </body>
+</html>
