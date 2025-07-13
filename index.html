@@ -4,6 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Ideas - Suitmedia</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto&display=swap" rel="stylesheet" />
+  
+  <!-- Style -->
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -30,33 +35,37 @@
     </div>
   </section>
 
-  <!-- FILTER -->
-  <div class="filter-bar">
-    <span id="pagination-info"></span>
-    <div>
-      <label>Show per page:</label>
-      <select id="showPerPage">
-        <option>10</option>
-        <option>20</option>
-        <option>50</option>
-      </select>
-    </div>
-    <div>
-      <label>Sort by:</label>
-      <select id="sortBy">
-        <option value="-published_at">Newest</option>
-        <option value="published_at">Oldest</option>
-      </select>
-    </div>
-  </div>
+  <main>
 
-  <!-- CARD CONTAINER -->
-  <div class="card-container" id="cardContainer"></div>
+    <!-- FILTER -->
+    <div class="filter-bar">
+      <span id="pagination-info">Showing 1 - 10 of 100</span>
+      <div class="select-group">
+        <label for="showPerPage">Show per page:</label>
+        <select id="showPerPage">
+          <option>10</option>
+          <option>20</option>
+          <option>50</option>
+        </select>
+      </div>
+      <div class="select-group">
+        <label for="sortBy">Sort by:</label>
+        <select id="sortBy">
+          <option value="-published_at">Newest</option>
+          <option value="published_at">Oldest</option>
+        </select>
+      </div>
+    </div>
 
-  <!-- PAGINATION -->
-  <div class="pagination" id="pagination"></div>
+    <!-- CARD CONTAINER -->
+    <div class="card-container" id="cardContainer"></div>
+
+    <!-- PAGINATION -->
+    <div class="pagination" id="pagination"></div>
+
+  </main>
 
   <script src="data.js"></script>
   <script src="script.js"></script>
-  </body>
+</body>
 </html>
